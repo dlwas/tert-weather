@@ -1,0 +1,41 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  outline: none;
+}
+
+// main elements
+html {
+  font-size: 15px;
+  color: $text-light;
+}
+
+// lists
+ul {
+  list-style: none;
+}
+
+// links
+a {
+  text-decoration: none;
+
+  &:link {
+    color: $sub-text-light;
+  }
+
+  &:visited {
+    color: $sub-text-light;
+  }
+
+  &:hover {
+    color: white;
+  }
+
+  &:active {
+    color: rgba($sub-text-light, 0.8);
+  }
+}
