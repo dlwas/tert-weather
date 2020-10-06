@@ -1,0 +1,21 @@
+{
+  "name": "tert-weather",
+  "version": "1.0.0",
+  "description": "Froenda portfolio project",
+  "main": "index.js",
+  "scripts": {
+    "build": "parcel build index.html",
+    "watch": "parcel -p 3000 index.html"
+  },
+  "author": "froenda.com",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.20.0",
+    "gsap": "^3.5.1",
+    "parcel-bundler": "^1.12.4",
+    "postcss-modules": "^3.2.2"
+  },
+  "devDependencies": {
+    "sass": "^1.26.11"
+  }
+}
