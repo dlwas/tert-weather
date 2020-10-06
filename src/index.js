@@ -32,10 +32,10 @@ topName.addEventListener('click', () => {
 
             animateAndUpdate(hiddenElements, 'in', update())
 
-            setInterval(() => {
-                update()
-                console.log('updated')
-            }, parseInt(getStorage('autoUpdate')))
+            // setInterval(() => {
+            //     update()
+            //     console.log('updated')
+            // }, parseInt(getStorage('autoUpdate')))
         }
     })
 })
