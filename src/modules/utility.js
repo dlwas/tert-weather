@@ -27,7 +27,7 @@ export const checkCity = () => {
     }
 }
 
-export const animate = (array, type, updateFn) => {
+export const animateAndUpdate = (array, type, ...updateFn) => {
     if (type === 'in') {
         let delay = 1
         array.forEach(element => {
@@ -39,7 +39,7 @@ export const animate = (array, type, updateFn) => {
             })
             delay += .75
         })
-        updateFn
+        if (updateFn) { updateFn } else { return }
     } else if (type === 'out') {
         array.forEach(element => {
             gsap.to(`.${element}`, {
@@ -47,7 +47,7 @@ export const animate = (array, type, updateFn) => {
                 duration: .5,
             })
         })
-        updateFn
+        if (updateFn) { updateFn } else { return }
     }
 }
 
@@ -84,6 +84,6 @@ export const hiddenElements = [
 export default {
     showUnits,
     checkCity,
-    animate,
+    animateAndUpdate,
     hiddenElements,
 }

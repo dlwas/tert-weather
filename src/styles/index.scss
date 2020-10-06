@@ -27,12 +27,14 @@ body {
     font-weight: 700;
     color: $text-light;
     font-size: 3rem;
+    cursor: pointer;
 
     & input[type=text] {
       background: transparent;
       border: none;
       color: $sub-text-light;
       text-align: center;
+      cursor: pointer;
     }
   }
 

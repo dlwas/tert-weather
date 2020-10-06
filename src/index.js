@@ -1,4 +1,4 @@
-import { animate, update, hiddenElements, checkCity } from './modules/utility'
+import { animateAndUpdate, update, hiddenElements, checkCity } from './modules/utility'
 import { setStorage, getStorage } from './modules/storage'
 
 import './styles/index.scss'
@@ -7,11 +7,13 @@ const init = () => {
     setStorage('city', '')
     setStorage('units', 'metric')
     setStorage('showUnits', 'false')
+    setStorage('autoUpdate', '2000')
 }
 
 init()
 
 const topName = document.getElementById('top-name')
+let firstUpdate = null
 
 topName.addEventListener('click', () => {
     let topInput = null
@@ -25,11 +27,15 @@ topName.addEventListener('click', () => {
     topInput.addEventListener('keyup', (e) => {
         if (e.key == 'Enter') {
             setStorage('city', topInput.value.toString())
-            animate(hiddenElements, 'out', update())
+
+            animateAndUpdate(hiddenElements, 'out', update())
+
+            animateAndUpdate(hiddenElements, 'in', update())
+
             setInterval(() => {
-                animate(hiddenElements, 'in', update())
-            }, 3600000)
+                update()
+                // console.log('updated')
+            }, parseInt(getStorage('autoUpdate')))
         }
     })
 })
-
