@@ -23,7 +23,8 @@ export const checkCity = () => {
     if (getStorage('city')) {
         return getStorage('city')
     } else {
-        return 'gdańsk'
+        setStorage('city', 'gdańsk')
+        return getStorage('city')
     }
 }
 

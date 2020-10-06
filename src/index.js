@@ -4,7 +4,7 @@ import { setStorage, getStorage } from './modules/storage'
 import './styles/index.scss'
 
 const init = () => {
-    setStorage('city', '')
+    // setStorage('city', '')
     setStorage('units', 'metric')
     setStorage('showUnits', 'false')
     setStorage('autoUpdate', '3600000')
