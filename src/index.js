@@ -7,7 +7,7 @@ const init = () => {
     setStorage('city', '')
     setStorage('units', 'metric')
     setStorage('showUnits', 'false')
-    setStorage('autoUpdate', '2000')
+    setStorage('autoUpdate', '3600000')
 }
 
 init()
