@@ -5,7 +5,7 @@ import { getStorage } from './storage'
 export const get = () => {
     return new Promise((resolve, reject) => {
         const config = {
-            base: 'https://api.openweathermap.org/data/2.5/weather?',
+            base: 'http://api.openweathermap.org/data/2.5/weather?',
             city: getStorage('city'),
             units: getStorage('units')
         }
