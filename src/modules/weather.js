@@ -9,7 +9,7 @@ export const get = () => {
             city: getStorage('city'),
             units: getStorage('units')
         }
-        const results = axios.get(`${config.base}q=${config.city}&units=${config.units}&appid=${process.env.API_KEY}`)
+        const results = axios.get(`${config.base}q=${config.city}&units=${config.units}&appid=a76c4ea75e3725b83e65d21eeb6b1102`)
         resolve(results)
     })
 }
