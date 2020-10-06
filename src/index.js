@@ -34,7 +34,7 @@ topName.addEventListener('click', () => {
 
             setInterval(() => {
                 update()
-                // console.log('updated')
+                console.log('updated')
             }, parseInt(getStorage('autoUpdate')))
         }
     })
