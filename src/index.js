@@ -4,7 +4,6 @@ import { setStorage, getStorage } from './modules/storage'
 import './styles/index.scss'
 
 const init = () => {
-    // setStorage('city', '')
     setStorage('units', 'metric')
     setStorage('showUnits', 'false')
     setStorage('autoUpdate', '3600000')
@@ -32,10 +31,10 @@ topName.addEventListener('click', () => {
 
             animateAndUpdate(hiddenElements, 'in', update())
 
-            // setInterval(() => {
-            //     update()
-            //     console.log('updated')
-            // }, parseInt(getStorage('autoUpdate')))
+            setInterval(() => {
+                update()
+                console.log('updated')
+            }, parseInt(getStorage('autoUpdate')))
         }
     })
 })
