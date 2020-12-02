@@ -7,7 +7,7 @@
     "build": "parcel build index.html",
     "watch": "parcel -p 3000 index.html"
   },
-  "author": "froenda.com",
+  "author": "https://froenda.com",
   "license": "ISC",
   "dependencies": {
     "axios": "^0.20.0",
