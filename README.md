@@ -1,6 +1,6 @@
 # tert-weather
 
-Weather app base on driggle artist design made with JavaScript, Parcel.js 
+Weather app based on https://dribbble.com/r3id design made with JavaScript, Parcel.js.
 
 ## Live
 
